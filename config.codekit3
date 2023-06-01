@@ -345,6 +345,14 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
+    "\/dev\/content\/checkout\/retailers.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/checkout\/retailers.html",
+      "oF" : 0
+    },
     "\/dev\/content\/index\/details.kit" : {
       "cB" : 0,
       "ft" : 2048,
