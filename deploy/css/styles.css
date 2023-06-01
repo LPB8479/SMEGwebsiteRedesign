@@ -353,10 +353,6 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-img {
-  width: 50px;
-}
-
 /* =============
     Typography
 ============= */
@@ -454,4 +450,12 @@ textarea {
 }
 #colorContainer #whiteColor {
   background-color: #f9f9f9;
+}
+
+/* =============
+    Retailers
+============= */
+#retailers img {
+  width: 35px;
+  height: 35px;
 }
