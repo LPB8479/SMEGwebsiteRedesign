@@ -1,8 +1,5 @@
 H1= productName
 H2= sectionHeader
-H3= reviewTitle
-H4= purchasingOptions
-H5= readMore
 P= body
 
 Thank you plan:
