@@ -356,6 +356,11 @@ a:link, a:visited {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -458,4 +463,12 @@ textarea {
 #retailers img {
   width: 35px;
   height: 35px;
+}
+
+/* =============
+    Reviews
+============= */
+.reviewStars img {
+  width: 24px;
+  height: 24px;
 }
