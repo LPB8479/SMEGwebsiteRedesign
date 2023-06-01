@@ -11,8 +11,15 @@ html {
     Variables
 ============= */
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --primary: #000000;
+  --onPrimary: #ffffff;
+  --starYellow: #FFDA3F;
+  --starInactive: #D1D1D1;
+  --starDark: #808080;
+  --secondary: #D8D8D8;
+  --accentDark: #074E90;
+  --accentMed: #3C9CF6;
+  --accentLight: #C1D3E3;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -59,8 +66,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -90,8 +96,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -229,8 +234,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -258,8 +262,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -331,23 +334,57 @@ template {
 /* =============
     Base
 ============= */
+.headerFooter {
+  background-color: var(--accentDark);
+}
+.headerFooter img {
+  filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
 /* =============
     Typography
 ============= */
 /* =============
     Buttons
 ============= */
+.blueButton {
+  background-color: var(--accentDark);
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 15px;
+}
+.blueButton:hover {
+  background-color: var(--accentMed);
+}
+.blueButton:active {
+  background-color: var(--onPrimary);
+  color: var(--accentMed);
+  border-color: var(--accentMed);
+}
+
 /* =============
     Forms
 ============= */
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input[type=text],
@@ -363,6 +400,15 @@ textarea {
 /* =============
     Header
 ============= */
+.logoImg {
+  width: 120px;
+}
+@media (min-width: 1024px) {
+  .logoImg {
+    width: 280px;
+  }
+}
+
 /* =============
     Footer
 ============= */

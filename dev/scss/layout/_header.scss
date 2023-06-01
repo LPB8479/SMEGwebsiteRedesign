@@ -1,3 +1,9 @@
 /* =============
     Header
 ============= */
+.logoImg{
+    width: 120px;
+    @include lg{
+        width: 280px;
+    }
+}

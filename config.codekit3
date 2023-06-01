@@ -9,6 +9,295 @@
   ],
   "creatorBuild" : "34484",
   "files" : {
+    "\/Assets\/allmodern.png" : {
+      "ft" : 32768,
+      "iS" : 1553,
+      "oA" : 0,
+      "oAP" : "\/Assets\/allmodern.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/amazon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/amazon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/coverImg.jpg" : {
+      "ft" : 16384,
+      "iS" : 274145,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/coverImg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/crateBarrel.png" : {
+      "ft" : 32768,
+      "iS" : 388,
+      "oA" : 0,
+      "oAP" : "\/Assets\/crateBarrel.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/food52.jpg" : {
+      "ft" : 16384,
+      "iS" : 28579,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/food52.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/img1.png" : {
+      "ft" : 32768,
+      "iS" : 656078,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/img2.jpg" : {
+      "ft" : 16384,
+      "iS" : 248668,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/img3.png" : {
+      "ft" : 32768,
+      "iS" : 319279,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/img4.jpg" : {
+      "ft" : 16384,
+      "iS" : 83234,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/img5.jpg" : {
+      "ft" : 16384,
+      "iS" : 48832,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/img6.png" : {
+      "ft" : 32768,
+      "iS" : 309963,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img6.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/img7.png" : {
+      "ft" : 32768,
+      "iS" : 2694725,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img7.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/img8.png" : {
+      "ft" : 32768,
+      "iS" : 201180,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img8.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/img9GIF.gif" : {
+      "ft" : 4194304,
+      "iS" : 4373620,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img9GIF.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/Assets\/img9Still.png" : {
+      "ft" : 32768,
+      "iS" : 206959,
+      "oA" : 0,
+      "oAP" : "\/Assets\/img9Still.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/kitchenkapers.png" : {
+      "ft" : 32768,
+      "iS" : 1677,
+      "oA" : 0,
+      "oAP" : "\/Assets\/kitchenkapers.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/nm.png" : {
+      "ft" : 32768,
+      "iS" : 1096,
+      "oA" : 0,
+      "oAP" : "\/Assets\/nm.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/Smeg_logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Smeg_logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/starEmpty.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/starEmpty.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/starFull.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/starFull.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/starHalf.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/starHalf.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/wayfair.png" : {
+      "ft" : 32768,
+      "iS" : 2587,
+      "oA" : 0,
+      "oAP" : "\/Assets\/wayfair.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/ws.png" : {
+      "ft" : 32768,
+      "iS" : 652,
+      "oA" : 0,
+      "oAP" : "\/Assets\/ws.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -40,11 +329,59 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/global\/footer.kit" : {
+    "\/deploy\/thankYou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankYou.html",
+      "oF" : 0
+    },
+    "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
+      "oAP" : "\/dev\/checkout.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/index\/details.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/details.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/index\/product.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/product.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/index\/reviews.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/colorSelector.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/global\/colorSelector.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -60,7 +397,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
@@ -255,6 +592,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thankYou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/thankYou.html",
+      "oF" : 0
+    },
+    "\/notes.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/notes.txt",
+      "oF" : 0
     },
     "\/prepros.config" : {
       "cB" : 0,

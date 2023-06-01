@@ -1,3 +1,21 @@
 /* =============
     Buttons
 ============= */
+.blueButton{
+    background-color: var(--accentDark);
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    border: 2px solid #ffffff00;
+    //font-weight: 600;
+    //font-size: 14px;
+     border-radius: 15px;
+     &:hover{
+        background-color: var(--accentMed);
+     }
+     &:active{
+        background-color: var(--onPrimary);
+        color: var(--accentMed);
+        border-color: var(--accentMed);
+     }
+}
