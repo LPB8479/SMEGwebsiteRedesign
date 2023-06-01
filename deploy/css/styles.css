@@ -353,6 +353,10 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+img {
+  width: 50px;
+}
+
 /* =============
     Typography
 ============= */
@@ -412,3 +416,42 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Color Selector
+============= */
+#colorContainer {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+}
+#colorContainer .colorSwatch {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--primary);
+}
+#colorContainer #blackColor {
+  background-color: #1c1c1c;
+}
+#colorContainer #creamColor {
+  background-color: #ede7d6;
+  border-radius: 4px;
+  border: 3px solid var(--accentDark) !important;
+}
+#colorContainer #pastelBlueColor {
+  background-color: #bed9e8;
+}
+#colorContainer #pastelGreenColor {
+  background-color: #b8d7c9;
+}
+#colorContainer #pinkColor {
+  background-color: #d9adc1;
+}
+#colorContainer #redColor {
+  background-color: #b40e15;
+}
+#colorContainer #steelColor {
+  background-color: #d0d0d0;
+}
+#colorContainer #whiteColor {
+  background-color: #f9f9f9;
+}
