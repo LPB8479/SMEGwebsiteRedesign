@@ -342,8 +342,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/checkout.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
     },
     "\/dev\/content\/index\/details.kit" : {
       "cB" : 0,
@@ -598,8 +598,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/thankYou.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/thankYou.html",
+      "oF" : 2
     },
     "\/notes.txt" : {
       "cB" : 0,
