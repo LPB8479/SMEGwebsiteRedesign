@@ -410,21 +410,6 @@ textarea {
     Navigation
 ============= */
 /* =============
-    Header
-============= */
-.logoImg {
-  width: 120px;
-}
-@media (min-width: 1024px) {
-  .logoImg {
-    width: 280px;
-  }
-}
-
-/* =============
-    Footer
-============= */
-/* =============
     Color Selector
 ============= */
 #colorContainer {
@@ -469,6 +454,21 @@ textarea {
 }
 
 /* =============
+    Header
+============= */
+.logoImg {
+  width: 120px;
+}
+@media (min-width: 1024px) {
+  .logoImg {
+    width: 280px;
+  }
+}
+
+/* =============
+    Footer
+============= */
+/* =============
     Retailers
 ============= */
 #retailers img {
@@ -482,4 +482,17 @@ textarea {
 .reviewStars img {
   width: 24px;
   height: 24px;
+}
+
+#product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". product .";
+}
+#product > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: product;
 }

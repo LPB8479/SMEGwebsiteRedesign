@@ -1,11 +1,10 @@
 #product {
 
     display: grid;
-    grid-template-columns: 100px auto 16px;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". product .";
 
     >div {
         grid-area: product;
-        background: #000;
     }
 }
