@@ -19,6 +19,7 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/colorSelector";
-@import "sections/retailers";
-@import "sections/reviews";
+@import "sections/thankYou/_colorSelector";
+@import "thankYou/_retailers";
+@import "thankYou/_reviews";
+@import "index/_product";

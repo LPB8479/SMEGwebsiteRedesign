@@ -1,0 +1,13 @@
+#product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px auto 16px;
+  grid-template-columns: 100px auto 16px;
+      grid-template-areas: ". product .";
+}
+#product > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: product;
+  background: #000;
+}
