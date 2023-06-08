@@ -484,21 +484,31 @@ textarea {
   height: 24px;
 }
 
-@media (min-width: 768px) {
-  #product {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 16px auto 16px;
-    grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". product .";
-  }
+.reviewText {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 6);
+  -webkit-box-orient: vertical;
+  word-break: var(--word-break, "none");
+  overflow: hidden;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  text-align: var(--align, left);
+}
+
+#product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". product .";
 }
 #product > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: product;
 }
-@media (min-width: 768px) {
-  #product > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
+
+#details {
+  background-color: var(--accentLight);
 }
