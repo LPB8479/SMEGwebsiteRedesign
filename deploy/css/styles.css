@@ -361,6 +361,81 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+body {
+  font-family: " Raleway", sans-serif;
+}
+
+/*H1= productName
+H2= sectionHeader
+P= body
+
+light=300
+regular=400
+medium=500
+semibold=600
+bold=700
+*/
+p, .fontBody {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+.fontPurchasingOptions {
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.reviewTitle {
+  font-weight: 700;
+  font-size: 1.1875rem;
+}
+
+.username {
+  font-weight: 300;
+  font-size: 0.625rem;
+}
+
+.readmore {
+  font-weight: 400;
+  font-size: 0.625rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+td {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 180%;
+}
+
+.blueButton {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.fontFooter1 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 180%;
+  color: var(--onPrimary);
+}
+
+.fontFooter2 {
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 161.9%;
+  color: var(--onPrimary);
+}
+
 /* =============
     Buttons
 ============= */

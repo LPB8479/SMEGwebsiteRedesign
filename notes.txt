@@ -1,10 +1,4 @@
-H1= productName
-H2= sectionHeader
-P= body
-
 Thank you plan:
     open retailer in new tab -> JS wait 3-5 secs -> switch to ty page\
 
 If time: make color selector interactive
-
-Export diagram as png or something
