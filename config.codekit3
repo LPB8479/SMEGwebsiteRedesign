@@ -58,6 +58,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/Assets\/diagram.png" : {
+      "ft" : 32768,
+      "iS" : 309722,
+      "oA" : 0,
+      "oAP" : "\/Assets\/diagram.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/Assets\/food52.jpg" : {
       "ft" : 16384,
       "iS" : 28579,
@@ -496,6 +509,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/components\/_colorSelector.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/components\/_colorSelector.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/components\/_forms.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -586,7 +614,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/colorSelector.scss" : {
+    "\/dev\/scss\/sections\/checkout\/_retailers.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -595,13 +623,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/colorSelector.css",
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_retailers.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/retailers.scss" : {
+    "\/dev\/scss\/sections\/index\/_details.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -610,13 +638,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/retailers.css",
+      "oAP" : "\/dev\/scss\/sections\/index\/_details.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/reviews.scss" : {
+    "\/dev\/scss\/sections\/index\/_product.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -625,7 +653,22 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/reviews.css",
+      "oAP" : "\/dev\/scss\/sections\/index\/_product.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/index\/_reviews.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/index\/_reviews.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

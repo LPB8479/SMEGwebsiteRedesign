@@ -66,8 +66,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -97,8 +96,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -236,8 +234,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -265,8 +262,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -342,8 +338,7 @@ template {
   background-color: var(--accentDark);
 }
 .headerFooter img {
-  -webkit-filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
-          filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
+  filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
 }
 
 ul {
@@ -390,13 +385,11 @@ h1, h2, h3, h4, h5, p {
     Forms
 ============= */
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input[type=text],
@@ -413,13 +406,9 @@ textarea {
     Color Selector
 ============= */
 #colorContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #colorContainer .colorSwatch {
   width: 36px;
@@ -490,22 +479,16 @@ textarea {
   -webkit-box-orient: vertical;
   word-break: var(--word-break, "none");
   overflow: hidden;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   text-align: var(--align, left);
 }
 
 #product {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". product .";
+  grid-template-areas: ". product .";
 }
 #product > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: product;
 }
 
