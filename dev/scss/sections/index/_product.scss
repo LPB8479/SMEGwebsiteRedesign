@@ -1,8 +1,9 @@
 #product {
-
+@include md{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". product .";
+}
 
     >div {
         grid-area: product;

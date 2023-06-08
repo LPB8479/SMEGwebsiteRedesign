@@ -484,15 +484,21 @@ textarea {
   height: 24px;
 }
 
-#product {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". product .";
+@media (min-width: 768px) {
+  #product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 16px auto 16px;
+    grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". product .";
+  }
 }
 #product > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: product;
+}
+@media (min-width: 768px) {
+  #product > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
 }
