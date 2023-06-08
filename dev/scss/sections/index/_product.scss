@@ -1,3 +1,6 @@
+/* =============
+    Product
+============= */
 #product {
 
     display: grid;
@@ -6,5 +9,19 @@
 
     >div {
         grid-area: product;
+
+        @include sm {
+            #productInfoDesktop {
+                display: none;
+            }
+        }
+
+        @include md {
+            #productInfoDesktop{display:block;}
+            // #productInfoDesktop{display:inline;}
+            #productInfoMobile {
+                display: none;
+            }
+        }
     }
 }

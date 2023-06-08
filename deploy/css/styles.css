@@ -466,6 +466,9 @@ textarea {
 }
 
 /* =============
+    Checkout
+============= */
+/* =============
     Reviews
 ============= */
 .reviewStars img {
@@ -483,6 +486,9 @@ textarea {
   text-align: var(--align, left);
 }
 
+/* =============
+    Product
+============= */
 #product {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -491,7 +497,23 @@ textarea {
 #product > div {
   grid-area: product;
 }
+@media (min-width: 576px) {
+  #product > div #productInfoDesktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #product > div #productInfoDesktop {
+    display: block;
+  }
+  #product > div #productInfoMobile {
+    display: none;
+  }
+}
 
+/* =============
+    Details
+============= */
 #details {
   background-color: var(--accentLight);
 }
