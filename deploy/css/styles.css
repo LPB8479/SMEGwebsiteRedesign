@@ -66,7 +66,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box; /* 1 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -96,7 +97,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -234,7 +236,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -262,7 +265,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -338,7 +342,8 @@ template {
   background-color: var(--accentDark);
 }
 .headerFooter img {
-  filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
+  -webkit-filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
+          filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
 }
 
 ul {
@@ -440,6 +445,9 @@ td {
     Buttons
 ============= */
 .blueButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: var(--accentDark);
   color: white;
   padding: 8px 16px;
@@ -460,11 +468,13 @@ td {
     Forms
 ============= */
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 input[type=text],
@@ -481,14 +491,23 @@ textarea {
     Color Selector
 ============= */
 #colorContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #colorContainer .colorSwatch {
   width: 36px;
   height: 36px;
   border: 1px solid var(--primary);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #colorContainer #blackColor {
   background-color: #1c1c1c;
@@ -497,6 +516,8 @@ textarea {
   background-color: #ede7d6;
   border-radius: 4px;
   border: 3px solid var(--accentDark) !important;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 #colorContainer #pastelBlueColor {
   background-color: #bed9e8;
@@ -557,7 +578,9 @@ textarea {
   -webkit-box-orient: vertical;
   word-break: var(--word-break, "none");
   overflow: hidden;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   text-align: var(--align, left);
 }
 
@@ -565,24 +588,81 @@ textarea {
     Product
 ============= */
 #product {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". product .";
+      grid-template-areas: ". product .";
 }
-#product > div {
+#product #altImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#product #altImages > img {
+  width: 65px;
+  height: 65px;
+}
+#product #productContent {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: product;
 }
-@media (min-width: 576px) {
-  #product > div #productInfoDesktop {
+#product #productContent #productInfoMobile {
+  display: -ms-grid;
+  display: grid;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  #product #productContent #productInfoMobile {
     display: none;
+  }
+}
+#product #productContent #productInfoDesktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  #product #productContent #productInfoDesktop {
+    display: initial;
+    display: -ms-grid;
+    display: grid;
+    gap: 40px;
+    -ms-grid-columns: 50% 40px auto;
+    grid-template-columns: 50% auto;
+        grid-template-areas: "images info";
+  }
+  #product #productContent #productInfoDesktop #productImages {
+    grid-area: images;
+  }
+  #product #productContent #productInfoDesktop #productImages img[alt=coverImg] {
+    max-width: 100%;
+  }
+  #product #productContent #productInfoDesktop #productInfoContent {
+    grid-area: info;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
   }
 }
 @media (min-width: 768px) {
-  #product > div #productInfoDesktop {
-    display: block;
+  #product #productContent #productInfoDesktop #productImages {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
-  #product > div #productInfoMobile {
-    display: none;
+  #product #productContent #productInfoDesktop #productInfoContent {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
 }
 

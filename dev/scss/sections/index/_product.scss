@@ -2,25 +2,56 @@
     Product
 ============= */
 #product {
-
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". product .";
 
-    >div {
+    #altImages {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        >img {
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    #productContent {
         grid-area: product;
 
-        @include sm {
-            #productInfoDesktop {
+        #productInfoMobile {
+            display: grid;
+            gap: 32px;
+
+            @include md {
                 display: none;
             }
         }
 
-        @include md {
-            #productInfoDesktop{display:block;}
-            // #productInfoDesktop{display:inline;}
-            #productInfoMobile {
-                display: none;
+        #productInfoDesktop {
+            display: none;
+
+            @include md {
+                display: initial;
+                display: grid;
+                gap: 40px;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "images info";
+
+                #productImages {
+                    grid-area: images;
+                    img[alt="coverImg"]{
+                        max-width: 100%;
+                    }
+                }
+
+                #productInfoContent {
+                    grid-area: info;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                }
             }
         }
     }
