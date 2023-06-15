@@ -1,6 +1,43 @@
 /* =============
     Details
 ============= */
-#details{
+#details {
     background-color: var(--accentLight);
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". details .";
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    #detailsContent {
+        grid-area: details;
+
+        img {
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        display: grid;
+        gap: 4px;
+
+        #specs {
+            justify-self: center;
+            background-color: var(--onPrimary);
+            border-radius: 16px;
+            margin-bottom: 8px;
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". specs .";
+
+            >div {
+                grid-area: specs;
+                table{
+                    td:nth-child(2){
+                        padding-left: 21px;
+                    }
+                }
+            }
+            width: max-content;
+        }
+    }
 }

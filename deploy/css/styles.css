@@ -694,4 +694,47 @@ textarea {
 ============= */
 #details {
   background-color: var(--accentLight);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". details .";
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#details #detailsContent {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: details;
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+}
+#details #detailsContent img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+}
+#details #detailsContent #specs {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: var(--onPrimary);
+  border-radius: 16px;
+  margin-bottom: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". specs .";
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+#details #detailsContent #specs > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: specs;
+}
+#details #detailsContent #specs > div table td:nth-child(2) {
+  padding-left: 21px;
 }
