@@ -702,6 +702,12 @@ textarea {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+@media (min-width: 768px) {
+  #details {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 #details #detailsContent {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -710,30 +716,48 @@ textarea {
   display: grid;
   gap: 4px;
 }
-#details #detailsContent img {
+@media (min-width: 768px) {
+  #details #detailsContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+#details #detailsContent #features img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
 }
+@media (min-width: 768px) {
+  #details #detailsContent #features {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
 #details #detailsContent #specs {
-  -ms-grid-column-align: center;
-      justify-self: center;
   background-color: var(--onPrimary);
   border-radius: 16px;
-  margin-bottom: 8px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". specs .";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px;
+  gap: 19px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-}
-#details #detailsContent #specs > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: specs;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 #details #detailsContent #specs > div table td:nth-child(2) {
   padding-left: 21px;
