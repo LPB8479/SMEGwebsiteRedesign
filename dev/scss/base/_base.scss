@@ -20,3 +20,15 @@ ul{
 a:link, a:visited {
     text-decoration: none;
 }
+
+.content-space-top{
+    margin-top: 24px;
+
+    @include md{
+        margin-top: 24px;
+    }
+
+    @include lg{
+        margin-top: 30px;
+    }
+}

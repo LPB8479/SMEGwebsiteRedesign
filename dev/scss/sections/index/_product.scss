@@ -6,16 +6,6 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". product .";
 
-    #altImages {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        >img {
-            width: 65px;
-            height: 65px;
-        }
-    }
 
     #productContent {
         grid-area: product;
@@ -23,6 +13,11 @@
         #productInfoMobile {
             display: grid;
             gap: 32px;
+
+            img[alt="coverImg"] {
+                max-width: 100%;
+                max-height: 100%;
+            }
 
             @include md {
                 display: none;
@@ -41,8 +36,24 @@
 
                 #productImages {
                     grid-area: images;
-                    img[alt="coverImg"]{
+
+                    img[alt="coverImg"] {
                         max-width: 100%;
+                    }
+
+                    #altImages {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        .altImg {
+                            object-fit: cover;
+                            min-width: 1%;
+                            max-width: 100%;
+                            aspect-ratio: 1/1;
+                            width: 100%;
+                        }
                     }
                 }
 
