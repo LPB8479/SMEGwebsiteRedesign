@@ -8,7 +8,8 @@
     grid-template-areas: ". details .";
     padding-top: 8px;
     padding-bottom: 8px;
-    @include md{
+
+    @include md {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -16,23 +17,24 @@
     #detailsContent {
         grid-area: details;
 
-        @include md{
+        display: grid;
+        gap: 4px;
+
+        @include md {
             display: flex;
             justify-content: space-between;
         }
 
-        #features{
+        #features {
             img {
                 object-fit: contain;
                 max-width: 100%;
             }
-            @include md{
-                flex-basis:50%;
+
+            @include md {
+                flex-basis: 50%;
             }
         }
-
-        display: grid;
-        gap: 4px;
 
         #specs {
             background-color: var(--onPrimary);
@@ -44,12 +46,13 @@
             gap: 19px;
 
             >div {
-                table{
-                    td:nth-child(2){
+                table {
+                    td:nth-child(2) {
                         padding-left: 21px;
                     }
                 }
             }
+
             width: max-content;
             height: max-content;
         }

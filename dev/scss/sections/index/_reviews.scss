@@ -1,20 +1,156 @@
 /* =============
     Reviews
 ============= */
-.reviewStars {
-  img {
-    width: 24px;
-    height: 24px;
-  }
-}
+#reviews {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". reviews .";
 
-.reviewText {
-  // Line clamp w/ellipses
-  display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp, 6);
-  -webkit-box-orient: vertical;
-  word-break: var(--word-break, 'none');
-  overflow: hidden;
-  hyphens: auto;
-  text-align: var(--align, left);
+  #reviewsContent {
+    grid-area: reviews;
+
+    display: grid;
+    gap: 16px;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "Title Title"
+        "Stars Stars"
+        "R1 R2"
+        "R3 R4";
+      gap: 32px;
+    }
+
+    h2 {
+      @include md {
+        grid-area: Title;
+      }
+    }
+
+    #stars {
+      @include md {
+        grid-area: Stars;
+      }
+
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      >img {
+        height: 32px;
+
+        @include md {
+          height: 48px;
+        }
+      }
+    }
+
+    //Card styling
+    .reviewData {
+      display: grid;
+      gap: 10px;
+
+      @include md {
+        grid-template-columns: 60px auto;
+        column-gap: 27px;
+        row-gap: 10px;
+        grid-template-areas:
+          "User Info"
+          "User Text"
+          "User More";
+      }
+
+      .user {
+        display: grid;
+        gap: 5px;
+        line-height: 100% !important;
+
+        grid-template-columns: 32px auto;
+        grid-template-areas:
+        "icon name"
+        "icon time";
+
+        @include md {
+          grid-area: User;
+          grid-template-areas:
+          "icon"
+          "name"
+          "time";
+        }
+        .userIcon{
+          grid-area: icon;
+          font-size: 32px;
+          @include md{
+            font-size: 60px;
+          }
+        }
+        .username{
+          grid-area: name;
+        }
+        .time{
+          grid-area: time;
+        }
+      }
+
+      .reviewInfo {
+        @include lg {
+          display: flex;
+          gap: 10px;
+          grid-area: Info;
+        }
+
+        .reviewStars {
+          gap: 1px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      .reviewText {
+        // Line clamp w/ellipses
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+
+        @include md {
+          -webkit-line-clamp: 6;
+          grid-area: Text;
+        }
+      }
+
+      .readMore {
+        @include md {
+          grid-area: More;
+        }
+      }
+    }
+
+    #R1 {
+      @include md {
+        grid-area: R1;
+      }
+    }
+
+    #R2 {
+      @include md {
+        grid-area: R2;
+      }
+    }
+
+    #R3 {
+      @include md {
+        grid-area: R3;
+      }
+    }
+
+    #R4 {
+      @include md {
+        grid-area: R4;
+      }
+    }
+  }
 }
