@@ -58,7 +58,7 @@
         grid-template-areas:
           "User Info"
           "User Text"
-          "User More";
+          ". More";
       }
 
       .user {
@@ -68,28 +68,39 @@
 
         grid-template-columns: 32px auto;
         grid-template-areas:
-        "icon name"
-        "icon time";
+          "icon name"
+          "icon time";
 
         @include md {
           grid-area: User;
           grid-template-areas:
-          "icon"
-          "name"
-          "time";
+            "icon icon"
+            "name name"
+            "time time";
+          gap: 0px;
         }
-        .userIcon{
+
+        .userIcon {
           grid-area: icon;
           font-size: 32px;
-          @include md{
-            font-size: 60px;
+
+          @include md {
+            font-size: 62px;
           }
         }
-        .username{
+
+        .username {
           grid-area: name;
         }
-        .time{
+
+        .time {
           grid-area: time;
+        }
+
+        p {
+          @include md {
+            text-align: center;
+          }
         }
       }
 
@@ -102,10 +113,16 @@
 
         .reviewStars {
           gap: 1px;
+
           img {
             width: 24px;
             height: 24px;
           }
+
+          display:flex;
+          align-items: center;
+          width: fit-content;
+          overflow: visible;
         }
       }
 
@@ -123,6 +140,8 @@
       }
 
       .readMore {
+
+        //I can't figure out how to display:none this when the full review fits, probably something with JS
         @include md {
           grid-area: More;
         }

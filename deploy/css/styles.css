@@ -646,7 +646,7 @@ textarea {
             column-gap: 27px;
     row-gap: 10px;
     -ms-grid-rows: auto 10px auto 10px auto;
-        grid-template-areas: "User Info" "User Text" "User More";
+        grid-template-areas: "User Info" "User Text" ". More";
   }
 }
 #reviews #reviewsContent .reviewData .user {
@@ -662,7 +662,8 @@ textarea {
 @media (min-width: 768px) {
   #reviews #reviewsContent .reviewData .user {
     grid-area: User;
-        grid-template-areas: "icon" "name" "time";
+        grid-template-areas: "icon icon" "name name" "time time";
+    gap: 0px;
   }
 }
 #reviews #reviewsContent .reviewData .user .userIcon {
@@ -674,7 +675,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #reviews #reviewsContent .reviewData .user .userIcon {
-    font-size: 60px;
+    font-size: 62px;
   }
 }
 #reviews #reviewsContent .reviewData .user .username {
@@ -692,14 +693,22 @@ textarea {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
   }
   #reviews #reviewsContent .reviewData .user .username {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  #reviews #reviewsContent .reviewData .user .time {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #reviews #reviewsContent .reviewData .user .time {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+}
+@media (min-width: 768px) {
+  #reviews #reviewsContent .reviewData .user p {
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {
@@ -713,6 +722,16 @@ textarea {
 }
 #reviews #reviewsContent .reviewData .reviewInfo .reviewStars {
   gap: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: visible;
 }
 #reviews #reviewsContent .reviewData .reviewInfo .reviewStars img {
   width: 24px;
@@ -738,7 +757,7 @@ textarea {
 @media (min-width: 768px) {
   #reviews #reviewsContent .reviewData .user {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 5;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 1;
   }
   #reviews #reviewsContent .reviewData .reviewInfo {
