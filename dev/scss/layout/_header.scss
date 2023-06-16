@@ -2,10 +2,34 @@
     Header
 ============= */
 header{
-    .logoImg{
-        width: 120px;
-        @include lg{
-            width: 280px;
+    #mobileHeader{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        box-sizing: border-box;
+        @include md{
+            display: none;
         }
+    }
+    
+    #desktopHeader{
+        padding: 16px 0;
+        box-sizing: border-box;
+        display: none;
+        @include md{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+        .logoImg{
+            width: 120px;
+            @include lg{
+                width: 280px;
+            }
     }
 }

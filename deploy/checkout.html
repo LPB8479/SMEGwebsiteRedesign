@@ -14,18 +14,22 @@
 <body>
 <!--Header-->
 <header class="headerFooter">
-    <section id="leftMenu">
+    <div id="mobileHeader">
+        <a href="/deploy/index.html">
+            <!-- <a href="https://www.smeg.com/us"> -->
+            <img src="/Assets/Smeg_logo.svg" alt="SMEG Logo" class="logoImg">
+        </a>
+        <i class="fa-solid fa-bars menuButton"></i>
+    </div>
+    <div id="desktopHeader">
         <a href="#" class="menuButton">Products</a>
         <a href="#" class="menuButton">Aesthetic Lines</a>
-    </section>
-    <a href="/deploy/index.html">
-    <!-- <a href="https://www.smeg.com/us"> -->
-        <img src="/Assets/Smeg_logo.svg" alt="SMEG Logo" class="logoImg">
-    </a>
-    <section id="rightMenu">
-        <a href="#" class="menuButton">Inspiration</a>
+        <a href="/deploy/index.html">
+            <!-- <a href="https://www.smeg.com/us"> -->
+            <img src="/Assets/Smeg_logo.svg" alt="SMEG Logo" class="logoImg">
+        </a><a href="#" class="menuButton">Inspiration</a>
         <a href="#" class="menuButton">Retailers</a>
-    </section>
+    </div>
 </header>    <section id="checkout">
         <div id="checkoutContent" class="content-space-top">
             <img src="/Assets/coverImg.jpg" alt="coverImg">
@@ -61,7 +65,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/amazon.svg" alt="">
-                <p class="retailerName fontPurchasingOptions">Amazon</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Amazon</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$249.95</p>
         </section>
@@ -70,7 +74,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/crateBarrel.png" alt="">
-                <p class="retailerName fontPurchasingOptions">Crate and Barrel</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Crate and Barrel</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$249.95</p>
         </section>
@@ -79,7 +83,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/ws.png" alt="">
-                <p class="retailerName fontPurchasingOptions">Williams Sonoma</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Williams Sonoma</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$249.95</p>
         </section>
@@ -88,7 +92,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/wayfair.png" alt="">
-                <p class="retailerName fontPurchasingOptions">Wayfair</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Wayfair</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$249.95</p>
         </section>
@@ -97,7 +101,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/kitchenkapers.png" alt="">
-                <p class="retailerName fontPurchasingOptions">Kitchen Kapers</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Kitchen Kapers</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$249.95</p>
         </section>
@@ -106,7 +110,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/nm.png" alt="">
-                <p class="retailerName fontPurchasingOptions">Neiman Marcus</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Neiman Marcus</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$250</p>
         </section>
@@ -115,7 +119,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/allmodern.png" alt="">
-                <p class="retailerName fontPurchasingOptions">AllModern</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">AllModern</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$250</p>
         </section>
@@ -124,7 +128,7 @@
         <section>
             <div class="retailer">
                 <img class="retailerIcon" src="/Assets/food52.jpg" alt="">
-                <p class="retailerName fontPurchasingOptions">Food52</p>
+                <p class="retailerName fontPurchasingOptions" onclick="myFunction()">Food52</p>
             </div>
             <p class="retailerPrice fontPurchasingOptions">$249.95</p>
         </section>
