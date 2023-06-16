@@ -1,9 +1,11 @@
 /* =============
     Header
 ============= */
-.logoImg{
-    width: 120px;
-    @include lg{
-        width: 280px;
+header{
+    .logoImg{
+        width: 120px;
+        @include lg{
+            width: 280px;
+        }
     }
 }

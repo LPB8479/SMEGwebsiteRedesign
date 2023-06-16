@@ -1,3 +1,70 @@
 /* =============
     Footer
 ============= */
+footer{
+    padding: 8px 0;
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: ". footer .";
+    div{
+        grid-area: footer;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+        @include md{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas:
+            "large large"
+            "address sb"
+            "icons icons";
+        }
+        @include lg{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas:
+            "large large large"
+            "address sb icons";
+        }
+        #footerLarge{
+            grid-area: large;
+            img{
+                width: 152px;
+            }
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            align-items: center;
+            @include md{
+                flex-direction: row;
+                gap: 32px;
+            }
+        }
+        #address{
+            display: none;
+            @include md{
+                display: initial;
+            }
+            grid-area: address;
+        }
+        #smallerButtons{
+            display: none;
+            @include md{
+                display: flex;
+                flex-direction: column;
+            }
+            grid-area: sb;
+        }
+        #socials{
+            grid-area: icons;
+            display: flex;
+            color: var(--onPrimary);
+            i{
+                font-size: 48px;
+            }
+            gap: 16px;
+            padding: 8px;
+        }
+    }
+}

@@ -410,7 +410,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-.reviewTitle {
+.reviewTitle, .footerLargeItem {
   font-weight: 700;
   font-size: 1.1875rem;
 }
@@ -452,6 +452,10 @@ td {
   font-weight: 400;
   font-size: 0.625rem;
   line-height: 161.9%;
+  color: var(--onPrimary);
+}
+
+.footerLargeItem {
   color: var(--onPrimary);
 }
 
@@ -555,11 +559,11 @@ textarea {
 /* =============
     Header
 ============= */
-.logoImg {
+header .logoImg {
   width: 120px;
 }
 @media (min-width: 1024px) {
-  .logoImg {
+  header .logoImg {
     width: 280px;
   }
 }
@@ -567,6 +571,151 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  padding: 8px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto 40px;
+  grid-template-columns: 40px auto 40px;
+      grid-template-areas: ". footer .";
+}
+footer div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  footer div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+        grid-template-areas: "large large" "address sb" "icons icons";
+  }
+}
+@media (min-width: 1024px) {
+  footer div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+        grid-template-areas: "large large large" "address sb icons";
+  }
+}
+footer div #footerLarge {
+  grid-area: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer div #footerLarge img {
+  width: 152px;
+}
+@media (min-width: 768px) {
+  footer div #footerLarge {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 32px;
+  }
+}
+footer div #address {
+  display: none;
+  grid-area: address;
+}
+@media (min-width: 768px) {
+  footer div #address {
+    display: initial;
+  }
+}
+footer div #smallerButtons {
+  display: none;
+  grid-area: sb;
+}
+@media (min-width: 768px) {
+  footer div #smallerButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+footer div #socials {
+  grid-area: icons;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--onPrimary);
+  gap: 16px;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  footer div #footerLarge {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  footer div #address {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  footer div #smallerButtons {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  footer div #socials {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
+@media (min-width: 1024px) {
+  footer div #footerLarge {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  footer div #address {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  footer div #smallerButtons {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  footer div #socials {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+footer div #socials i {
+  font-size: 48px;
+}
+
 /* =============
     Retailers
 ============= */

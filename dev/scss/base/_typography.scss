@@ -21,14 +21,12 @@ semibold=600
 bold=700
 */
 
-//body
 p, .fontBody {
     font-weight: 500;
     font-size: rem-calc(14);
     line-height: 150%;
 }
 
-//purchasingOptions
 .fontPurchasingOptions {
     font-weight: 500;
     font-size: rem-calc(13);
@@ -40,25 +38,21 @@ h2{
     font-size: rem-calc(24);
 }
 
-//reviewTitle
-.reviewTitle{
+.reviewTitle, .footerLargeItem{
     font-weight: 700;
     font-size: rem-calc(19);
 }
 
-//reviewUser
 .username{
     font-weight: 300;
     font-size: rem-calc(10);
 }
 
-//readMore
 .readMore{
     font-weight: 400;
     font-size: rem-calc(10);
 }
 
-//productName
 h1{
     font-weight: 500;
     font-size: rem-calc(36);
@@ -71,13 +65,11 @@ td{
     line-height: 180%;
 }
 
-//button
 .blueButton{
     font-weight: 500;
     font-size: rem-calc(16);
 }
 
-//footer1
 .fontFooter1{
     font-weight: 400;
     font-size: rem-calc(12);
@@ -85,10 +77,13 @@ td{
     color: var(--onPrimary);
 }
 
-//footer2
 .fontFooter2{
     font-weight: 400;
     font-size: rem-calc(10);
     line-height: 161.9%;
+    color: var(--onPrimary);
+}
+
+.footerLargeItem{
     color: var(--onPrimary);
 }
