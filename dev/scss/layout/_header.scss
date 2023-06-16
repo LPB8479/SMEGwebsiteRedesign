@@ -1,11 +1,47 @@
 /* =============
     Header
 ============= */
-header{
-    .logoImg{
-        width: 120px;
-        @include lg{
-            width: 280px;
+header {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav";
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    #headerLogo {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+
+        .logoImg {
+            width: 120px;
+
+            @include lg {
+                width: 280px;
+            }
         }
+    }
+
+    #burgerContainer {
+        justify-content: flex-end;
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+
+        button {
+            border: none;
+            background-color: transparent;
+            color: var(--onPrimary);
+            font-size: rem-calc(20);
+        }
+    }
+
+    nav {
+        grid-area: nav;
     }
 }

@@ -1,3 +1,22 @@
 /* =============
     Navigation
 ============= */
+html{
+    scroll-behavior: smooth;
+}
+
+.show-menu{
+    display: block !important;
+}
+
+nav {
+    // display: none;
+    ul {
+        li {
+            text-align: right;
+            a:link, a:visited{
+                display: inline-block;
+            }
+        }
+    }
+}
