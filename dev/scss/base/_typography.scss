@@ -53,6 +53,7 @@ h2{
     font-size: rem-calc(10);
 }
 
+//productName
 h1{
     font-weight: 500;
     font-size: rem-calc(36);
@@ -65,9 +66,14 @@ td{
     line-height: 180%;
 }
 
-.blueButton{
+.blueButton, .fontblueButton{
     font-weight: 500;
     font-size: rem-calc(16);
+}
+
+.menuButton, .fontMenuButton{
+    font-weight: 600;
+    font-size: rem-calc(24);
 }
 
 .fontFooter1{
