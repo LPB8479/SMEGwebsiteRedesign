@@ -507,6 +507,10 @@ textarea {
   -webkit-appearance: none;
 }
 
+[type=search] {
+  padding: 7px 8px;
+}
+
 /* =============
     Navigation
 ============= */
@@ -722,16 +726,140 @@ footer div #socials i {
 }
 
 /* =============
-    Retailers
+    Checkout
 ============= */
-#retailers img {
+#checkout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". checkout .";
+}
+#checkout #checkoutContent {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: checkout;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  #checkout #checkoutContent {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
+    row-gap: 64px;
+    -ms-grid-columns: 50% 60px auto;
+    grid-template-columns: 50% auto;
+    -ms-grid-rows: auto 64px auto;
+        grid-template-areas: "img retailers" "info retailers";
+  }
+}
+@media (min-width: 1024px) {
+  #checkout #checkoutContent {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    -ms-grid-columns: 38% 40px auto 40px auto;
+    grid-template-columns: 38% auto auto;
+        grid-template-areas: "img info retailers";
+  }
+}
+#checkout #checkoutContent img[alt=coverImg] {
+  grid-area: img;
+  max-width: 100%;
+}
+#checkout #checkoutContent #checkoutInfo {
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  #checkout #checkoutContent #checkoutInfo {
+    gap: 64px;
+  }
+}
+#checkout #checkoutContent #checkoutInfo #checkoutDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+#checkout #checkoutContent #checkoutInfo #checkoutDetails #colorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+#checkout #checkoutContent #checkoutInfo #storeSearch form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+#checkout #checkoutContent #retailers {
+  grid-area: retailers;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+#checkout #checkoutContent #retailers a section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#checkout #checkoutContent #retailers a section p {
+  color: var(--primary);
+}
+#checkout #checkoutContent #retailers a section .retailer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#checkout #checkoutContent #retailers a section .retailer img {
   width: 35px;
   height: 35px;
 }
 
-/* =============
-    Checkout
-============= */
 /* =============
     Reviews
 ============= */
@@ -1055,11 +1183,51 @@ footer div #socials i {
             flex-direction: column;
     gap: 32px;
   }
+  #product #productContent #productInfoDesktop > #checkoutInfo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
 }
 @media (min-width: 768px) {
+  #checkout #checkoutContent img[alt=coverImg] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #checkout #checkoutContent #checkoutInfo {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #checkout #checkoutContent #retailers {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
   #product #productContent #productInfoDesktop #productImages {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+  }
+  #product #productContent #productInfoDesktop #productInfoContent {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #product #productContent #productInfoDesktop > #productInfoContent {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+@media (min-width: 1024px) {
+  #checkout #checkoutContent img[alt=coverImg] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #checkout #checkoutContent #checkoutInfo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #checkout #checkoutContent #retailers {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
   }
   #product #productContent #productInfoDesktop #productInfoContent {
     -ms-grid-row: 1;

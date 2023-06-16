@@ -4,26 +4,32 @@
 
 <body>
     <!-- @import "global/header.kit" -->
-    <div>
-        <h1>4-Slice Toaster</h1>
-        <img src="/Assets/coverImg.jpg" alt="">
-        <section>
-            <p>Color: Cream</p>
-            <!-- @import "global/colorSelector.kit" -->
-        </section>
-        <section>
-            <p class="reviewTitle">Find sellers near you</p>
-            <form action="#">
-                <input type="search" placeholder="Zip code" class="fontBody">
-                <button class="blueButton">Search</button>
-            </form>
-        </section>
-        <!-- @import "content/checkout/retailers.kit" -->
-    </div>
+    <section id="checkout">
+        <div id="checkoutContent" class="content-space-top">
+            <img src="/Assets/coverImg.jpg" alt="coverImg">
+            <div id="checkoutInfo">
+                <div id="checkoutDetails">
+                    <h1>4-Slice Toaster</h1>
+                    <section id="colorInfo">
+                        <p>Color: Cream</p>
+                        <!-- @import "global/colorSelector.kit" -->
+                    </section>
+                </div>
+                <section id="storeSearch">
+                    <p class="reviewTitle">Find sellers near you</p>
+                    <form action="#">
+                        <input type="search" placeholder="Zip code" class="fontBody">
+                        <button class="blueButton">Search</button>
+                    </form>
+                </section>
+            </div>
+            <!-- @import "content/checkout/retailers.kit" -->
+        </div>
+    </section>
     <!-- @import "global/footer.kit" -->
 
     <!-- @import "global/scripts.kit" -->
 
-</body>
+    </body>
 
 </html>
