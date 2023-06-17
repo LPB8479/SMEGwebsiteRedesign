@@ -36,7 +36,7 @@
             grid-area: info;
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 64px;
 
             @include lg{
                 gap: 64px;
@@ -55,6 +55,9 @@
             }
 
             #storeSearch {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
                 form{
                     display: flex;
                     gap: 10px;
@@ -67,6 +70,9 @@
             display: flex;
             flex-direction: column;
             gap: 18px;
+            @include md{
+                gap: 32px;
+            }
             align-items: stretch;
             a {
                 section {
@@ -87,6 +93,15 @@
                     }
                 }
             }
+        }
+        padding-bottom: 24px;
+
+        @include md{
+            padding-bottom: 32px;
+        }
+    
+        @include lg{
+            padding-bottom: 64px;
         }
     }
 }

@@ -171,5 +171,14 @@
         grid-area: R4;
       }
     }
+    padding-bottom: 24px;
+
+    @include md{
+        padding-bottom: 32px;
+    }
+
+    @include lg{
+        padding-bottom: 64px;
+    }
   }
 }

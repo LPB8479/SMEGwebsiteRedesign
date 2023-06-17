@@ -613,22 +613,22 @@ header #mobileHeader {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px;
+  padding: 32px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header #mobileHeader {
     display: none;
   }
 }
 header #desktopHeader {
-  padding: 16px 0;
+  padding: 32px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header #desktopHeader {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,12 +655,17 @@ header .logoImg {
     Footer
 ============= */
 footer {
-  padding: 8px 0;
+  padding: 16px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px auto 40px;
   grid-template-columns: 40px auto 40px;
       grid-template-areas: ". footer .";
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 40px 0;
+  }
 }
 footer div {
   -ms-grid-row: 1;
@@ -680,10 +685,12 @@ footer div {
 }
 @media (min-width: 768px) {
   footer div {
+    gap: 24px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
+    -ms-grid-columns: auto 24px auto;
     grid-template-columns: auto auto;
+    -ms-grid-rows: auto 24px auto 24px auto;
         grid-template-areas: "large large" "address sb" "icons icons";
   }
 }
@@ -759,20 +766,20 @@ footer div #socials {
   footer div #footerLarge {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 3;
   }
   footer div #address {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
   footer div #smallerButtons {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
   footer div #socials {
-    -ms-grid-row: 3;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 3;
   }
 }
 @media (min-width: 1024px) {
@@ -821,6 +828,7 @@ footer div #socials i {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  padding-bottom: 24px;
 }
 @media (min-width: 768px) {
   #checkout #checkoutContent {
@@ -859,7 +867,7 @@ footer div #socials i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
+  gap: 64px;
 }
 @media (min-width: 1024px) {
   #checkout #checkoutContent #checkoutInfo {
@@ -886,6 +894,16 @@ footer div #socials i {
           flex-direction: column;
   gap: 8px;
 }
+#checkout #checkoutContent #checkoutInfo #storeSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
 #checkout #checkoutContent #checkoutInfo #storeSearch form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,6 +923,11 @@ footer div #socials i {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+@media (min-width: 768px) {
+  #checkout #checkoutContent #retailers {
+    gap: 32px;
+  }
 }
 #checkout #checkoutContent #retailers a section {
   display: -webkit-box;
@@ -933,6 +956,16 @@ footer div #socials i {
   width: 35px;
   height: 35px;
 }
+@media (min-width: 768px) {
+  #checkout #checkoutContent {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #checkout #checkoutContent {
+    padding-bottom: 64px;
+  }
+}
 
 /* =============
     Reviews
@@ -951,6 +984,7 @@ footer div #socials i {
   display: -ms-grid;
   display: grid;
   gap: 16px;
+  padding-bottom: 24px;
 }
 @media (min-width: 768px) {
   #reviews #reviewsContent {
@@ -1175,6 +1209,16 @@ footer div #socials i {
   #reviews #reviewsContent #R4 {
     -ms-grid-row: 7;
     -ms-grid-column: 3;
+  }
+}
+@media (min-width: 768px) {
+  #reviews #reviewsContent {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #reviews #reviewsContent {
+    padding-bottom: 64px;
   }
 }
 
@@ -1418,6 +1462,7 @@ footer div #socials i {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+  text-align: center;
 }
 #thankYou #browseMore {
   background-color: var(--accentLight);
@@ -1431,9 +1476,20 @@ footer div #socials i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
+  gap: 24px;
   width: 100%;
   padding: 32px 16px;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #thankYou #browseMore {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #thankYou #browseMore {
+    padding-bottom: 64px;
+  }
 }
 #thankYou #browseMore #notaCarousel {
   display: -webkit-box;
@@ -1443,7 +1499,18 @@ footer div #socials i {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 768px) {
+  #thankYou #browseMore #notaCarousel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 #thankYou #browseMore #notaCarousel .suggestionCard {
   background-color: var(--onPrimary);
@@ -1461,7 +1528,7 @@ footer div #socials i {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 16px;
+  gap: 24px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1469,4 +1536,5 @@ footer div #socials i {
 }
 #thankYou #browseMore #notaCarousel .suggestionCard img {
   width: 50%;
+  min-width: 100px;
 }
