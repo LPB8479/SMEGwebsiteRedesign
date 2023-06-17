@@ -1,0 +1,35 @@
+/* =============
+    Header
+============= */
+header{
+    #mobileHeader{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 0;
+        box-sizing: border-box;
+        @include lg{
+            display: none;
+        }
+    }
+    
+    #desktopHeader{
+        padding: 32px 0;
+        box-sizing: border-box;
+        display: none;
+        @include lg{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+        .logoImg{
+            width: 120px;
+            @include lg{
+                width: 280px;
+            }
+    }
+}

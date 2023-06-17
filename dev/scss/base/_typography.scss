@@ -1,0 +1,95 @@
+/* =============
+    Typography
+============= */
+h1,h2,h3,h4,h5, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Raleway', sans-serif;
+}
+
+/*H1= productName
+H2= sectionHeader
+P= body
+
+light=300
+regular=400
+medium=500
+semibold=600
+bold=700
+*/
+
+p, .fontBody {
+    font-weight: 500;
+    font-size: rem-calc(14);
+    line-height: 150%;
+}
+
+.fontPurchasingOptions {
+    font-weight: 500;
+    font-size: rem-calc(13);
+}
+
+//sectionHeader
+h2{
+    font-weight: 700;
+    font-size: rem-calc(24);
+}
+
+.reviewTitle, .footerLargeItem{
+    font-weight: 700;
+    font-size: rem-calc(19);
+}
+
+.username{
+    font-weight: 300;
+    font-size: rem-calc(10);
+}
+
+.readMore{
+    font-weight: 400;
+    font-size: rem-calc(10);
+}
+
+//productName
+h1{
+    font-weight: 500;
+    font-size: rem-calc(36);
+}
+
+//specs
+td{
+    font-weight: 500;
+    font-size: rem-calc(14);
+    line-height: 180%;
+}
+
+.blueButton, .fontblueButton{
+    font-weight: 500;
+    font-size: rem-calc(16);
+}
+
+.menuButton, .fontMenuButton{
+    font-weight: 600;
+    font-size: rem-calc(24);
+}
+
+.fontFooter1{
+    font-weight: 400;
+    font-size: rem-calc(12);
+    line-height: 180%;
+    color: var(--onPrimary);
+}
+
+.fontFooter2{
+    font-weight: 400;
+    font-size: rem-calc(10);
+    line-height: 161.9%;
+    color: var(--onPrimary);
+}
+
+.footerLargeItem{
+    color: var(--onPrimary);
+}

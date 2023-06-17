@@ -1,0 +1,34 @@
+/* =============
+    Base
+============= */
+.headerFooter {
+    background-color: var(--accentDark);
+
+    img {
+        filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(155deg) brightness(101%) contrast(104%);
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.content-space-top{
+    margin-top: 24px;
+
+    @include md{
+        margin-top: 32px;
+    }
+
+    @include lg{
+        margin-top: 64px;
+    }
+}

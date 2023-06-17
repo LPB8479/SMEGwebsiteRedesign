@@ -1,0 +1,54 @@
+/* =============
+    Buttons
+============= */
+.blueButton {
+   width: fit-content;
+   background-color: var(--accentDark);
+   color: var(--onPrimary);
+   padding: 8px 16px;
+   display: inline-block;
+   border: 2px solid #ffffff00;
+   border-radius: 15px;
+
+   &:hover {
+      background-color: var(--accentMed);
+   }
+
+   &:active {
+      background-color: var(--onPrimary);
+      color: var(--accentMed);
+      border-color: var(--accentMed);
+   }
+}
+
+.menuButton{
+   width: fit-content;
+   background-color: var(--accentDark);
+   color: var(--onPrimary);
+   padding: 6px 16px;
+   display: inline-block;
+   border-radius: 15px;
+
+   &:hover{
+      text-decoration: underline;
+   }
+}
+.homeButton{
+   width: fit-content;
+   background-color: var(--accentDark);
+   color: var(--onPrimary);
+   padding: 6px 16px;
+   display: inline-block;
+   border-radius: 15px;
+   border: 2px solid #ffffff00;
+
+   &:hover {
+      background-color: var(--accentMed);
+   }
+
+   &:active {
+      background-color: var(--onPrimary);
+      color: var(--accentMed);
+      border-color: var(--accentMed);
+   }
+}

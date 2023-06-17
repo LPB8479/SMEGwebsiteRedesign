@@ -1,0 +1,4 @@
+Thank you plan:
+    open retailer in new tab -> JS wait 3-5 secs -> switch to ty page\
+
+If time: make color selector interactive

@@ -1,0 +1,69 @@
+/* =============
+    Product
+============= */
+#product {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". product .";
+
+
+    #productContent {
+        grid-area: product;
+
+        #productInfoMobile {
+            display: grid;
+            gap: 32px;
+
+            img[alt="coverImg"] {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            @include md {
+                display: none;
+            }
+        }
+
+        #productInfoDesktop {
+            display: none;
+
+            @include md {
+                display: initial;
+                display: grid;
+                gap: 40px;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "images info";
+
+                #productImages {
+                    grid-area: images;
+
+                    img[alt="coverImg"] {
+                        max-width: 100%;
+                    }
+
+                    #altImages {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        .altImg {
+                            object-fit: cover;
+                            min-width: 1%;
+                            max-width: 100%;
+                            aspect-ratio: 1/1;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                #productInfoContent {
+                    grid-area: info;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                }
+            }
+        }
+    }
+}

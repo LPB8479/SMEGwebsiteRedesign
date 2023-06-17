@@ -1,0 +1,28 @@
+/* =============
+    Color Selector
+============= */
+#colorContainer{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    width: fit-content;
+    .colorSwatch {
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--primary);
+        box-sizing: border-box;
+    }
+    #blackColor{background-color: #1c1c1c;}
+    #creamColor{
+        background-color: #ede7d6;
+        border-radius: 4px;
+        border: 3px solid var(--accentDark) !important;
+        box-sizing: content-box;
+    }
+    #pastelBlueColor{background-color: #bed9e8;}
+    #pastelGreenColor{background-color: #b8d7c9;}
+    #pinkColor{background-color: #d9adc1;}
+    #redColor{background-color: #b40e15;}
+    #steelColor{background-color: #d0d0d0;}
+    #whiteColor{background-color: #f9f9f9;}
+}
